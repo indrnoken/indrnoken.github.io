@@ -16,6 +16,9 @@
     <!-- bootstarp icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
+    <!-- Library AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- my css -->
     <link rel="stylesheet" href="style.css">
     <title>Portfolio | M.Indro .T</title>
@@ -61,9 +64,9 @@
 
     <!-- jumbotron awal -->
     <section class="jumbotron text-center">
-        <img src="img/1.jpg" alt="Muhamad Indro" width="200" class="rounded-circle img-thumbnail">
+        <img src="img/1.jpg" alt="Muhamad Indro" width="200" class="rounded-circle img-thumbnail" />
         <h1 class="display-4">M.Indro .T</h1>
-        <p class="lead">Cisco Networking | Figma</p>
+        <p class="lead"></p>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,224L21.8,192C43.6,160,87,96,131,106.7C174.5,117,218,203,262,218.7C305.5,235,349,181,393,154.7C436.4,128,480,128,524,160C567.3,192,611,256,655,266.7C698.2,277,742,235,785,202.7C829.1,171,873,149,916,165.3C960,181,1004,235,1047,224C1090.9,213,1135,139,1178,96C1221.8,53,1265,43,1309,74.7C1352.7,107,1396,181,1418,218.7L1440,256L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
       </section>
       
@@ -72,17 +75,18 @@
     
     <!-- about awal -->
     <section id="about">
-        <div class="container">
+    <!-- data-aos adalah library untuk animasi -->
+        <div class="container"> 
             <div class="row text-center mb-3">
                 <div class="col">
                     <h2>About Me</h2>
                 </div>
             </div>
             <div class="row justify-content-center fs-5 text-center">
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-right" >
                     <p>Hanya orang random yang punya ketertarikan dengan dunia teknologi</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4" data-aos="fade-left" data-aos-delay="200">
                     <P>Yang tidak disengaja menekuni sampai dengan hari ini</P>
                 </div>
             </div>
@@ -101,7 +105,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="50">
                         <img src="img/charlesdeluvio-Lks7vei-eAg-unsplash.jpg" class="card-img-top" alt="project 1">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -109,7 +113,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="100">
                         <img src="img/firmbee-com-gcsNOsPEXfs-unsplash.jpg" class="card-img-top" alt="project 2">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -117,7 +121,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="150">
                         <img src="img/jordan-harrison-40XgDxBfYXM-unsplash.jpg" class="card-img-top" alt="project 3">
                         <div class="card-body">
                           <p class="card-text">Desain topologi jaringan yang digunakan pada MPLS dan PT Klien.</p>
@@ -125,7 +129,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="200">
                         <img src="img/merakist-CNbRsQj8mHQ-unsplash.jpg" class="card-img-top" alt="project 4">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -133,7 +137,7 @@
                       </div>
                 </div>
                 <div class="col-md-4 mb-3">
-                    <div class="card">
+                    <div class="card" data-aos="flip-up" data-aos-delay="250">
                         <img src="img/thought-catalog-505eectW54k-unsplash.jpg" class="card-img-top" alt="project 5">
                         <div class="card-body">
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -145,6 +149,70 @@
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L20,229.3C40,235,80,245,120,224C160,203,200,149,240,128C280,107,320,117,360,122.7C400,128,440,128,480,112C520,96,560,64,600,90.7C640,117,680,203,720,208C760,213,800,139,840,138.7C880,139,920,213,960,245.3C1000,277,1040,267,1080,240C1120,213,1160,171,1200,144C1240,117,1280,107,1320,138.7C1360,171,1400,245,1420,282.7L1440,320L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
     </section>
     <!-- project akhir -->
+
+    <!-- Galeri Awal -->
+    <section id="gallery">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Gallery</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/1a.jpg" alt="gambar1a" class="img-fluid gallery-img" >
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/2b.jpg" alt="gambar2b" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/3c.jpg" alt="gambar3c" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/4d.jpg" alt="gambar4d" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/5e.jpg" alt="gambar5e" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/6f.jpg" alt="gambar6f" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/7g.jpg" alt="gambar7g" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/8h.jpg" alt="gambar8h" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/9i.jpg" alt="gambar9i" class="img-fluid gallery-img">
+            </a>
+          </div>
+          <div class="col-md-3">
+            <a href="#">
+              <img src="img/10j.jpg" alt="gambar10j" class="img-fluid gallery-img">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Galeri Akhir -->
 
     <!-- awal contact -->
 
@@ -199,6 +267,33 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- AOS Javascript -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+      const galleryImager = document.querySelectorAll ('.gallery-img');
+      galleryImager.forEach((img, i) => {
+        img.dataset.aos = 'fade-down'
+        img.dataset.aosDelay = i * 50;
+        img.dataset.aosDuration = 1000;
+      })
+
+      AOS.init({ once: true,
+      duration: 2000,});
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <script>
+      gsap.registerPlugin(TextPlugin);
+      gsap.to('.lead', {duration : 2, delay: 1.5, text: 'Cisco Networking | Figma'})
+      gsap.from('.jumbotron img', {duration:1, rotateY : 360, opacity: 0 });
+      gsap.from('.navbar', {duration: 1.5, y:'-100%', opacity: 0, ease: 'bounce'})
+      gsap.from('.display-4', {duration: 1, x:-50, opacity: 0, delay: 0.5, ease: 'back'})
+    </script>
+
 
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbxDONPV_Cqt9sPg9m5Q0FfkASdDaP7w09jyEiIMlS8GD0YqO1zzTMeok3OuCcAXz2U_/exec'
