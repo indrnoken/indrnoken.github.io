@@ -17,6 +17,7 @@ section {
 
 #gallery .row > * {
   padding: 3;
+  margin-top: 10px;
 }
 
 /* My cisco */
