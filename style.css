@@ -31,7 +31,7 @@ section {
 }
 
 .cisco-box::before {
-  content: "MY";
+  content: "USE";
   color: #fff;
   font-size: 6em;
   font-weight: bold;
@@ -49,7 +49,7 @@ section {
 }
 
 .cisco-box::after {
-  content: "ROUTER";
+  content: "KIT";
   color: #fff;
   font-size: 4.3em;
   font-weight: bold;
